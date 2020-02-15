@@ -2,11 +2,22 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <!-- global tool related properties -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>makewebrequest</ToolCommandName>
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+    
     <Title>MakeWebRequest</Title>
-    <Authors>Paul KIng</Authors>
-    <Copyright>© Paul King 2020</Copyright>
+    <Authors>Paul King</Authors>
+    <Description>Tool for making simple web requests</Description>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright 2020 © Paul King. All Rights Reserved</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RespositoryUrl>https://github.com/gyro2009/MakeWebRequestTool</RespositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageType>DotNetCliTool</PackageType>
   </PropertyGroup>
 
   <ItemGroup>
