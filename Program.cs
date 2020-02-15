@@ -15,7 +15,7 @@ namespace MakeWebRequest
         /// <param name="requestVerb">Http Request Method (Required)</param>
         /// <param name="requestBody">Body to send with Request</param>
         /// <param name="outFile">Location to save request body</param>
-        public static async Task<int> Main(string url = "http://www.google.com", string requestVerb = "get", string requestBody = "", string outFile = "")
+        public static async Task<int> Main(string url, string requestVerb, string requestBody, string outFile)
         {
             var serviceCollection = new ServiceCollection();
             serviceCollection.AddHttpClient<InternalHttpClient>();
